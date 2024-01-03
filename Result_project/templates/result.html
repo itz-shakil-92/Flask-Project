@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .result-container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-text {
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .back-to-form {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-to-form a {
+            text-decoration: none;
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .back-to-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>Result Page</title>
+</head>
+<body>
+
+    <div class="result-container">
+        <h2 class="result-text">
+            The output is {{ result }}
+        </h2>
+
+        <div class="back-to-form">
+            <a href="/form">Go back to the form</a>
+        </div>
+    </div>
+
+</body>
+</html>

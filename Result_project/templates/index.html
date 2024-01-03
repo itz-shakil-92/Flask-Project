@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Student Marks Form</title>
+</head>
+<body>
+
+    <h2>Student Marks Form</h2>
+
+    <form action="/submit" method="post">
+        <label for="science">Science Marks:</label>
+        <input type="number" id="science" name="science" min="0" max="100" required>
+        <br>
+
+        <label for="maths">Maths Marks:</label>
+        <input type="number" id="maths" name="maths" min="0" max="100" required>
+        <br>
+
+        <label for="cProgramming">C Programming Marks:</label>
+        <input type="number" id="cProgramming" name="cProgramming" min="0" max="100" required>
+        <br>
+
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>
